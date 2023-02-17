@@ -1,0 +1,4 @@
+1. Separate out the things that change from those that stay the same;
+2. Program to an interface, not an implementation;
+3. Favor composition over inheritance (inheritance is mainly used to define interfaces);
+4. Delegation.

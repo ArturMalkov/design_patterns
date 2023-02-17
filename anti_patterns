@@ -1,0 +1,51 @@
+Anti-Patterns (or pitfalls) - classes of the most commonly implemented bad solutions to problems.
+
+General anti-patterns:
+- Accidental Complexity: introducing unnecessary complexity to a solution;
+- Action at a distance: unexpected interaction between widely separated parts of the system;
+- Accumulate and Fire: setting parameters for subroutines in a collection of global variables;
+- Blind Faith: lack of checking of (a) the correctness of a bug fix or (b) the result of a subroutine;
+- Boat Anchor: retaining a part of a system that no longer has any use (e.g. commented out code, methods with no calls to
+them);
+- Busy Spin: consuming CPU while waiting for something to happen, usually by repeated checking instead of proper messaging
+(e.g. using 'while' instead of a listener);
+- Caching Failure: forgetting to reset an error flag when an error has been corrected;
+- Checking Type instead of Interface: checking that an object has a specific type when only a certain contract is required;
+- Code Momentum: over-constraining part of a system by repeatedly assuming things about it in other parts;
+- Coding by Exception: adding new code to handle each special case as it is recognised;
+- Cryptic Code: using abbreviations instead of full self-descriptive names;
+- Double-checked Locking: checking, before locking, if this is necessary in a way which may fail with e.g. modern hardware or compilers;
+- Hard code: Embedding assumptions about the environment of a system at many points in its implementation;
+- Magic Numbers: using particular numbers in algorithms without explanations (instead of using a constant or configs);
+- Procedural code: when another paradigm is more appropriate;
+- Spaghetti code: systems whose structure is barely comprehensible, especially because of misuse of code structures;
+- Soap Bubble: the class pretends to contain some data while in fact it doesn't.
+
+
+Anti-Patterns in OOP:
+- BaseBean: inheriting functionality from a utility class instead of delegating to it;
+- CallSuper: child's method needs to call the same method of a parent class for functioning;
+- Empty Subclass Failure: 'raise NotImplementedError' in a number of methods which have been unnecessarily inherited from a
+parent class;
+- God Object: concentration of a big number of functions in a single class;
+- Object Cesspool: reusing objects which don't satisfy the contract for reusing (prefer delegation over inheritance);
+- Poltergeist: object whose sole purpose is to transfer info to other objects (data transfer object - DTO);
+- Yo-yo problem: structure (e.g. inheritance) is difficult to understand as a result of excessive fragmentation;
+- Singleton itis: excessive use of singleton pattern.
+
+
+Methodological anti-patterns:
+- Copy and Paste programming: copying (and modifying) existing code rather than creating generic solutions;
+- De-factoring: the process of removing functionality and replacing it with documentation;
+- Golden hammer: assuming that a favorite solution is universally applicable;
+- Silver bullet: assuming that a favorite technical solution can solve a larger process or problem;
+- Improbability factor:assuming that it is improbable that a known error becomes effective;
+- Premature optimization: optimization on the basis of insufficient information;
+- Reinventing the wheel: failing to adopt an existing, adequate solution;
+- Reinventing the square wheel: creating a poor solution when a good one exists.
+
+
+
+
+
+

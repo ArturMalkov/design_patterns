@@ -1,0 +1,62 @@
+Patterns Classification
+
+Taxonomy of patterns:
+1) idiom - directly related to a particular programming language (cannot be applied to another programming language)
+2) specific design - solution to a particular problem
+3) design pattern - OOP pattern - relationships, interactions and distribution of responsibility among classes and objects
+aimed at solving the most common design problems in the most efficient way.
+
+Advantages of design patterns:
+- each pattern describes a set of common problems and offers best practices
+- unification of terminology (allows programmers to speak the same language), module names
+- reusability - can be used again and again for similar problems
+- unlike idioms, they can be applied to any programming language
+
+
+Design patterns:
+
+Categories - Gamma Categorization
+
+
+Creational:
+# Deal with the creation (construction) of objects
+# Explicit (constructor) vs implicit (dependency injection, etc.) creation
+# Wholesale (single statement) vs piecewise (step-by-step) initialization
+
+- Builder
+- Factories:
+    - Abstract Factory
+    - Factory Method
+- Prototype
+- Singleton
+
+
+
+Structural:
+# Concerned with the structure (or how objects relate to each other)
+# Many patterns are wrappers that mimic the underlying class' interface
+# Stress the importance of good API design
+
+- Adapter
+- Bridge
+- Composite
+- Decorator
+- Facade
+- Flyweight
+- Proxy
+
+
+Behavioral:
+# They are all different; no central theme (mainly how objects communicate with each other)
+
+- Chain of Responsibility
+- Command
+- Interpreter
+- Iterator
+- Mediator
+- Memento
+- Observer
+- State
+- Strategy
+- Template Method
+- Visitor

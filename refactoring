@@ -1,0 +1,21 @@
+Refactoring (or reorganization) - the process of full or partial transformation of the internal structure of the program
+while maintaining its external behavior.
+Refactoring is based on a sequence of little behavior-preserving changes.
+
+Most common refactoring methods (Martin Fowler):
+- Rename;
+- Change Method Signature;
+- Encapsulate Field (make a field protected/private and provide getters to it);
+- Extract Class;
+- Extract Interface;
+- Extract Local Variable;
+- Extract Method (if some part of your code requires comments about what it does, it should be extracted into a separate
+method and the previous comment should become its name (to ensure the code is self-documenting));
+- Move Method (used when a method addresses another class more often that the class within which it resides);
+- Generalize Type;
+- Inline (opposite to extraction);
+- Introduce Factory;
+- Introduce parameter;
+- Pull Up (e.g. extracting common functionality from subclasses to their parent class);
+- Push Down (opposite to pull up);
+- Replace Conditional with Polymorphism.
